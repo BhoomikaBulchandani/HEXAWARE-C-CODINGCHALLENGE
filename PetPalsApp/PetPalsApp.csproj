@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="8.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="8.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="8.0.2" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="DAO_Library">
+      <HintPath>..\DAO_Library\bin\Debug\net8.0\DAO_Library.dll</HintPath>
+    </Reference>
+    <Reference Include="Entity_Library">
+      <HintPath>..\Entity_Library\bin\Debug\net8.0\Entity_Library.dll</HintPath>
+    </Reference>
+    <Reference Include="Exception_Library">
+      <HintPath>..\Exception_Library\bin\Debug\net8.0\Exception_Library.dll</HintPath>
+    </Reference>
+    <Reference Include="Utility_Library">
+      <HintPath>..\Utility_Library\bin\Debug\net8.0\Utility_Library.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
